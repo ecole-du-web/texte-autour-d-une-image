@@ -16,7 +16,12 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
 }
-
+/* clearfix si le texte est plus petit que l'image. */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .container h1 {
   margin-bottom: 10px;
 }
